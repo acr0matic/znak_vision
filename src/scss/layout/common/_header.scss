@@ -3,9 +3,17 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
+  padding: 20px 0;
+  box-shadow: 0 4px 23px rgba(0, 0, 0, 0.08);
 }
 
 .header {
+  &__text {
+    font-weight: $weight-Bold;
+    font-size: $font-size__large;
 
+    color: $text-green;
+
+    text-transform: uppercase;
+  }
 }
