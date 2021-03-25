@@ -1,0 +1,7 @@
+.section {
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}

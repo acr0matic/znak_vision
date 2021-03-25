@@ -1,0 +1,246 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  @include background("../img/pages/main/hero/background.jpg");
+
+  .container {
+    position: relative;
+    border-right: 1px solid #3b3b3b;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 260px;
+      left: 60px;
+
+      display: block;
+      background-color: #fe5b92;
+
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  &__separator {
+    display: block;
+  }
+
+  &__avatar {
+    position: relative;
+    top: -20px;
+    left: -15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 40%;
+
+      display: block;
+      width: 1px;
+      height: 105px;
+
+      background: $palette-secondary;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+
+      display: block;
+      width: 400%;
+      height: 1px;
+
+      background: $palette-secondary;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    margin-bottom: 75px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      top: 10px;
+      left: 264px;
+
+      display: block;
+      width: 1px;
+      height: 400px;
+
+      background: $palette-secondary;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      top: -5px;
+      left: 200px;
+
+      display: block;
+      width: 180px;
+      height: 1px;
+
+      background: $palette-secondary;
+    }
+  }
+
+  &__container-border {
+    position: absolute;
+    top: 35%;
+    right: -50px;
+
+    display: flex;
+
+    transform: rotate(90deg);
+
+    span:nth-child(1) {
+      color: $text-blue;
+    }
+
+    span:nth-child(2) {
+      margin-left: 10px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__decoration {
+    div::after {
+      font-size: 13px;
+    }
+
+    .right {
+      position: absolute;
+      top: 60%;
+      right: -13px;
+    }
+
+    .left {
+      position: absolute;
+      bottom: 70px;
+      left: 105px;
+
+      &::after {
+        content: "#2196F3";
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+
+        color: $text-blue;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+
+        display: block;
+        width: 1px;
+        height: 290px;
+
+        background: $palette-secondary;
+      }
+    }
+
+    .down-green {
+      position: absolute;
+      right: 105px;
+      bottom: 70px;
+      display: block;
+
+      width: 80px;
+      height: 65px;
+
+      background-color: #96c85b;
+
+      &::after {
+        content: "#96c85b";
+        position: absolute;
+        top: -18px;
+        right: 0;
+
+        color: $text-green;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        background-color: #96c85b;
+      }
+    }
+
+    .down-red {
+      position: absolute;
+      right: 185px;
+      bottom: 90px;
+      display: block;
+
+      width: 80px;
+      height: 45px;
+
+      background-color: #fe5b92;
+
+      &::after {
+        content: "#fe5b92";
+        position: absolute;
+        top: -18px;
+        left: 0;
+
+        color: $text-red;
+      }
+    }
+
+    .middle {
+      position: absolute;
+      top: 40%;
+      right: 180px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 0;
+      left: 520px;
+    }
+
+    .top {
+      position: absolute;
+      top: 75px;
+      right: 190px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+
+        display: block;
+        width: 170px;
+        height: 1px;
+
+        background: $palette-secondary;
+      }
+    }
+  }
+}

@@ -3,11 +3,15 @@
 // -----------------------------------------------------------------------------
 
 #header {
+  position: relative;
   padding: 20px 0;
   box-shadow: 0 4px 23px rgba(0, 0, 0, 0.08);
+  background-color: $palette-main;
 }
 
 .header {
+  position: relative;
+
   &__text {
     font-weight: $weight-Bold;
     font-size: $font-size__large;
@@ -15,5 +19,18 @@
     color: $text-green;
 
     text-transform: uppercase;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: 60px;
+
+    display: block;
+    background-color: #3b3b3b;
+
+    width: 50px;
+    height: 30px;
   }
 }

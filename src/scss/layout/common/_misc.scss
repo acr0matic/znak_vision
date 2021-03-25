@@ -1,4 +1,11 @@
 .logo {
+  &--large {
+    width: 72px;
+  }
+
+  &--full {
+    width: 310px;
+  }
 }
 
 .link {
@@ -15,5 +22,19 @@
     &:hover {
       opacity: 0.7;
     }
+  }
+}
+
+.marker {
+  display: inline-block;
+  padding: 3px 7px 0 7px;
+  color: $text-white;
+
+  &--red {
+    background-color: $marker-red;
+  }
+
+  &--green {
+    background-color: $marker-green;
   }
 }
