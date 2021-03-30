@@ -1,0 +1,42 @@
+#contact {
+  .container {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -110px;
+      right: 15px;
+
+      display: block;
+      background-color: #3b3b3b;
+
+      width: 55px;
+      height: 30px;
+    }
+  }
+}
+
+.contact {
+  .link-text {
+    font-size: $font-size__large;
+  }
+
+  &__icon {
+    width: 52px;
+  }
+
+  &-decoration {
+    .main {
+      position: absolute;
+      top: -120px;
+      right: 200px;
+    }
+
+    .top-left {
+      position: absolute;
+      top: -185px;
+      left: 290px;
+    }
+  }
+}
