@@ -1,7 +1,24 @@
 .section {
+  padding-top: 95px;
+
   &__text {
     &:not(:last-child) {
       margin-bottom: 18px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+
+    font-size: $font-size__title;
+    font-family: Geometria, sans-serif;
+
+    &--underline::after {
+      content: url('../img/design/underline.svg');
+      position: absolute;
+      right: 0;
+      bottom: -20px;
     }
   }
 }

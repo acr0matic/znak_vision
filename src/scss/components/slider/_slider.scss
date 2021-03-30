@@ -1,0 +1,11 @@
+.swiper {
+  &-button-prev,
+  &-button-next {
+    outline: none;
+    transition: 0.15s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
