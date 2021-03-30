@@ -11,6 +11,31 @@
   .row:not(:last-child) {
     margin-bottom: 125px;
   }
+
+  .container {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -110px;
+      left: 15px;
+
+      display: block;
+      background-color: #3b3b3b;
+
+      width: 55px;
+      height: 30px;
+    }
+
+    &::before {
+      content: "#3B3B3B";
+      position: absolute;
+      top: -125px;
+      left: 15px;
+
+      color: $text-black;
+      font-size: 13px;
+    }
+  }
 }
 
 .portfolio {
@@ -94,6 +119,35 @@
       font-size: 14px;
 
       transform: rotate(-90deg);
+    }
+  }
+
+  &-decoration {
+    .top {
+      position: absolute;
+      top: -100px;
+      right: 110px;
+
+      &::after {
+        content: "#FFFFFF";
+        position: absolute;
+        top: 32px;
+        right: 35px;
+
+        font-size: 13px;
+      }
+    }
+
+    .main {
+      position: absolute;
+      top: -120px;
+      right: 10px;
+
+      pointer-events: none;
+
+      img {
+        width: 942px;
+      }
     }
   }
 }
