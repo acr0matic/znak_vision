@@ -7,10 +7,23 @@
   padding: 20px 0;
   box-shadow: 0 4px 23px rgba(0, 0, 0, 0.08);
   background-color: $palette-main;
+
+  @include breakpoint($breakpoint-tablet) {
+    padding: 5px 0;
+  }
 }
 
 .header {
   position: relative;
+
+  &__email {
+    @include breakpoint($breakpoint-tablet) {
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+      font-size: 14px;
+    }
+  }
 
   &__text {
     font-weight: $weight-Bold;
@@ -19,6 +32,10 @@
     color: $text-green;
 
     text-transform: uppercase;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: 14px;
+    }
   }
 
   &::after {
@@ -32,5 +49,13 @@
 
     width: 50px;
     height: 30px;
+
+    @include breakpoint($breakpoint-tablet) {
+      top: 37px;
+      right: initial;
+      left: -30px;
+
+      height: 11px;
+    }
   }
 }

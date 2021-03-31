@@ -1,0 +1,11 @@
+.container {
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include breakpoint($breakpoint-mobile) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
