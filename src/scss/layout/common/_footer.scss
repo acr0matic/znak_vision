@@ -11,6 +11,12 @@
 }
 
 .footer {
+  &__text {
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: 14px;
+    }
+  }
+
   &__link {
     margin: 0 15px;
   }

@@ -20,10 +20,18 @@
 .contact {
   .link-text {
     font-size: $font-size__large;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 16px;
+    }
   }
 
   &__icon {
     width: 52px;
+  }
+
+  &__text {
+
   }
 
   &-decoration {
@@ -37,6 +45,16 @@
       position: absolute;
       top: -185px;
       left: 290px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
+    }
+  }
+
+  .checkbox {
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 250px;
     }
   }
 }

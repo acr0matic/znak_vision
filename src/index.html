@@ -116,7 +116,7 @@
 
             <div class="col-3 offset-0 offset-md-1 order-0 order-md-0">
               <div class="hero__avatar">
-                <video autoplay muted loop>
+                <video autoplay muted loop poster="video/avatar-poster.jpg">
                   <source src="video/avatar.webm">
                 </video>
               </div>
@@ -198,15 +198,21 @@
 
         <div class="portfolio-decoration">
           <div class="top"><img src="img/design/portfolio/portfolio__top.svg" alt=""></div>
-          <div class="main"><img src="img/design/portfolio/portfolio__main.svg" alt=""></div>
+          <div class="main">
+            <picture>
+              <source srcset="img/design/portfolio/portfolio__mobile.svg" media="(max-width: 992px)">
+              <source srcset="img/design/portfolio/portfolio__main.svg" type="image/webp">
+              <img src="img/design/portfolio/portfolio__main.svg" alt="">
+            </picture>
+          </div>
         </div>
         <!-- /.portfolio-decoration -->
 
         <div class="portfolio">
           <div class="row">
-            <div class="col-3 d-flex flex-column align-items-start">
-              <h3 class="portfolio__title portfolio__title--blue">we<span style="color: #96c85b;">b</span></h3>
-              <p class="portfolio__text section__text">
+            <div class="col-12 col-md-3 mb-5 mb-md-0 d-flex flex-column align-items-start">
+              <h3 class="portfolio__title portfolio__title--blue ms-5 ms-md-0 ps-4 ps-md-0">we<span style="color: #96c85b;">b</span></h3>
+              <p class="portfolio__text section__text mb-5 mb-md-0">
                 Продающий <br> конверсионный лэндинг <br> под ключ.
                 <br> <br>
                 То есть дизайн, вёрстка
@@ -222,7 +228,7 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-7 offset-1 position-relative portfolio__web">
+            <div class="col-12 col-md-7 offset-0 offset-md-1 position-relative portfolio__web portfolio__full-width">
               <div class="portfolio__label">
                 от 18 000 руб
               </div>
@@ -285,9 +291,9 @@
           <!-- /.row -->
 
           <div class="row">
-            <div class="col-3 d-flex flex-column align-items-start">
+            <div class="col-12 col-md-3 d-flex flex-column align-items-start mb-5 mb-md-0">
               <h3 class="portfolio__title portfolio__title--green">instagram storie<span style="color: #2196f3;">s</span></h3>
-              <p class="portfolio__text section__text">
+              <p class="portfolio__text section__text mb-5 mb-md-0">
                 Креативные анимированные <br> сториз.
                 <br> <br>
                 Продающие и <br> информативные.
@@ -301,14 +307,14 @@
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-4 offset-1 mt-auto">
+            <div class="col-4 d-none d-md-block offset-1 mt-auto">
               <video controls class="portfolio__video d-block ms-auto lazy" data-src="video/portfolio/stories/1.webm" loop>
                 <source type="video/webm" data-src="video/portfolio/stories/1.webm">
               </video>
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="portfolio__label">
                 от 1 290 руб
               </div>
@@ -323,9 +329,9 @@
           <!-- /.row -->
 
           <div class="row">
-            <div class="col-3 d-flex flex-column align-items-start">
+            <div class="col-12 col-md-3 d-flex flex-column align-items-start">
               <h3 class="portfolio__title portfolio__title--blue">оформление <br> соцсете<span style="color: #fe5b92;">й</span></h3>
-              <p class="portfolio__text section__text">
+              <p class="portfolio__text section__text mb-5 mb-md-0">
                 Оформление любой соцсети. <br> ВК, FB, Instagram, YouTube.
                 <br> <br>
                 Обложка, аватар,
@@ -337,11 +343,11 @@
                 ВК и бизнес-группы FB
               </p>
 
-              <button class="button button-primary mt-auto">Оформить соцсеть</button>
+              <button class="button button-primary mt-auto mb-5 mb-md-0">Оформить соцсеть</button>
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-7 offset-1 position-relative portfolio__social">
+            <div class="col-12 col-md-7 offset-0 offset-md-1 position-relative portfolio__social portfolio__full-width">
               <div class="portfolio__label">
                 от 1 000 руб
               </div>
@@ -419,7 +425,7 @@
           <!-- /.row -->
 
           <div class="row">
-            <div class="col-4 d-flex flex-column align-items-start">
+            <div class="col-12 col-md-4 d-flex flex-column align-items-start">
               <h3 class="portfolio__title portfolio__title--green">посты и <br> gif-пост<span style="color: #2196f3;">ы</span></h3>
               <p class="portfolio__text section__text">
                 Выслушаю пожелания, проникнусь <br> тематикой и продам.
@@ -435,11 +441,11 @@
                 В ВК также можно видео со звуком <br> закольцевать и сделать <br> анимированный продающий пост.
               </p>
 
-              <button class="button button-primary mt-auto">Хочу креатив</button>
+              <button class="button button-primary mt-auto mb-5 mb-md-0">Хочу креатив</button>
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-4">
+            <div class="col-4 d-none d-md-block">
               <div class="portfolio__label">
                 от 500 руб
               </div>
@@ -452,7 +458,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="portfolio__label portfolio__label--gif">
                 от 1 000 руб
               </div>
@@ -467,9 +473,9 @@
           <!-- /.row -->
 
           <div class="row">
-            <div class="col-5 d-flex flex-column align-items-start">
+            <div class="col-12 col-md-5 d-flex flex-column align-items-start">
               <h3 class="portfolio__title portfolio__title--blue">оформление <br> youtube-блого<span style="color: #96c85b;">в</span></h3>
-              <p class="portfolio__text section__text">
+              <p class="portfolio__text section__text mb-5 mb-md-0">
                 Настоящая <br> бродкаст-заставка к вашему <br> блогу или отдельному видео.
                 <br> <br>
                 Всплывающие плашки, <br> перебивки.
@@ -477,11 +483,11 @@
                 Профессиональный монтаж <br> блогов, фильмов, сюжетов. <br> Обоснованная склейка.
               </p>
 
-              <button class="button button-primary mt-auto">Взорвать YouTube</button>
+              <button class="button button-primary mt-auto mb-5 mb-md-0">Взорвать YouTube</button>
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-7 mt-auto">
+            <div class="col-12 col-md-7 mt-auto">
               <div class="portfolio__label">
                 от 10 000 руб
               </div>
@@ -495,9 +501,9 @@
           </div>
 
           <div class="row">
-            <div class="col-4 d-flex flex-column align-items-start">
+            <div class="col-12 col-md-4 d-flex flex-column align-items-start">
               <h3 class="portfolio__title portfolio__title--blue">обложки <br> книг и музык<span style="color: #fe5b92;">и</span></h3>
-              <p class="portfolio__text section__text">
+              <p class="portfolio__text section__text mb-5 mb-md-0">
                 Обложка отражающая суть и <br> настроение произведения.
                 <br> <br>
                 Бонусом идёт небольшая
@@ -511,11 +517,11 @@
                 даты выхода и т.д.
               </p>
 
-              <button class="button button-primary mt-auto">Нужна обложка</button>
+              <button class="button button-primary mt-auto mb-5 mb-md-0">Нужна обложка</button>
             </div>
             <!-- /.col-3 -->
 
-            <div class="col-6 offset-1 position-relative portfolio__cover">
+            <div class="col-12 col-md-6 offset-0 offset-md-1 position-relative portfolio__cover">
               <div class="portfolio__label">
                 от 1 500 руб
               </div>
@@ -623,14 +629,10 @@
 
         <div class="contact">
           <div class="row justify-content-center">
-            <div class="col-5 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-5 d-flex flex-column align-items-center">
               <div class="contact__social d-flex mb-4">
-                <a href="" class="contact__link link link-icon me-4">
+                <a href="" class="contact__link link link-icon">
                   <img class="contact__icon" src="img/icons/social/telegram.svg" alt="">
-                </a>
-
-                <a href="" class="contact__link link link-icon ms-2">
-                  <img class="contact__icon" src="img/icons/social/whatsapp.svg" alt="">
                 </a>
               </div>
               <!-- /.contact__social -->
@@ -673,32 +675,12 @@
       <div class="footer text-center d-flex flex-column align-items-center">
         <p class="footer__text">ну и обязательно - All Rights Reserved</p>
         <div class="footer__social d-flex align-items-center my-2">
-          <a href="" class="footer__link link link-icon ms-2">
+          <a href="" class="footer__link link link-icon">
             <img class="footer__icon" src="img/icons/social/vk.svg" alt="">
           </a>
 
-          <a href="" class="footer__link link link-icon ms-2">
-            <img class="footer__icon" src="img/icons/social/instagram.svg" alt="">
-          </a>
-
-          <a href="" class="footer__link link link-icon ms-2">
-            <img class="footer__icon" src="img/icons/social/behance.svg" alt="">
-          </a>
-
-          <a href="" class="footer__link link link-icon ms-2">
+          <a href="" class="footer__link link link-icon ms-1">
             <img class="footer__icon" src="img/icons/social/vimeo.svg" alt="">
-          </a>
-
-          <a href="" class="footer__link link link-icon ms-2">
-            <img class="footer__icon" src="img/icons/social/dribble.svg" alt="">
-          </a>
-
-          <a href="" class="footer__link link link-icon ms-2">
-            <img class="footer__icon" src="img/icons/social/facebook.svg" alt="">
-          </a>
-
-          <a href="" class="footer__link link link-icon ms-2">
-            <img class="footer__icon" src="img/icons/social/flickr.svg" alt="">
           </a>
         </div>
         <!-- /.footer__social -->

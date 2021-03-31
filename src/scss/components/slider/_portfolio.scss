@@ -2,6 +2,10 @@
   &__prev,
   &__next {
     top: 50%;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 
   &__prev {
@@ -22,6 +26,10 @@
 
   &__item {
     height: 380px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: initial;
+    }
   }
 
   &__image {
