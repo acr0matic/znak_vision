@@ -24,6 +24,10 @@
 
       width: 55px;
       height: 30px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
     }
 
     &::before {
@@ -34,6 +38,10 @@
 
       color: $text-black;
       font-size: 13px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
     }
   }
 }

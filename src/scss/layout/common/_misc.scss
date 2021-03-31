@@ -1,12 +1,20 @@
 .logo {
   &--large {
     width: 72px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 44px;
+    }
   }
 
   &--full {
     position: relative;
     z-index: 10;
     width: 311px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 200px;
+    }
   }
 
   &--footer {

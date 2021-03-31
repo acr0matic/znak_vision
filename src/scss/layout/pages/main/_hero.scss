@@ -5,9 +5,18 @@
 #hero {
   @include background("../img/pages/main/hero/background.jpg");
 
+
+  @include breakpoint($breakpoint-mobile--large) {
+    background-image: none;
+  }
+
   .container {
     position: relative;
     border-right: 1px solid #3b3b3b;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      border-right: none;
+    }
 
     &::after {
       content: "";
@@ -20,6 +29,12 @@
 
       width: 30px;
       height: 30px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        top: 75px;
+        bottom: initial;
+        left: 230px;
+      }
     }
   }
 }
@@ -38,6 +53,16 @@
     top: -20px;
     left: -15px;
 
+    width: 65px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      left: -20px;
+
+      video {
+        width: 205px;
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -49,6 +74,15 @@
       height: 97px;
 
       background: $palette-secondary;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        top: 15px;
+        right: 0;
+        left: initial;
+
+        width: 400%;
+        height: 1px;
+      }
     }
 
     &::after {
@@ -63,6 +97,13 @@
 
       background: $palette-secondary;
 
+      @include breakpoint($breakpoint-mobile--large) {
+        right: 15px;
+        bottom: 14px;
+
+        width: 55px;
+        height: 1px;
+      }
     }
   }
 
@@ -70,6 +111,11 @@
     position: relative;
     z-index: 10;
     margin-bottom: 75px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: -20px;
+      margin-bottom: 30px;
+    }
 
     &::after {
       content: "";
@@ -83,6 +129,10 @@
       height: 380px;
 
       background: $palette-secondary;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
     }
 
     &::before {
@@ -97,6 +147,11 @@
       height: 1px;
 
       background: $palette-secondary;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        top: 4px;
+        left: 125px;
+      }
     }
   }
 
@@ -117,6 +172,10 @@
       margin-left: 10px;
       transform: rotate(90deg);
     }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 
   &__decoration {
@@ -128,12 +187,37 @@
       position: absolute;
       top: 60%;
       right: -13px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        top: 150px;
+        right: -40px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          display: block;
+          width: 55px;
+          height: 1px;
+
+          background: $palette-secondary;
+        }
+      }
     }
 
     .left {
       position: absolute;
       bottom: 70px;
       left: 105px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        bottom: 40px;
+        left: -20px;
+      }
 
       &::after {
         content: "#2196F3";
@@ -155,6 +239,10 @@
         height: 290px;
 
         background: $palette-secondary;
+
+        @include breakpoint($breakpoint-mobile--large) {
+          display: none;
+        }
       }
     }
 
@@ -168,6 +256,10 @@
       height: 65px;
 
       background-color: #96c85b;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
 
       &::after {
         content: "#96c85b";
@@ -204,6 +296,10 @@
 
       background-color: #fe5b92;
 
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
+
       &::after {
         content: "#fe5b92";
         position: absolute;
@@ -218,18 +314,30 @@
       position: absolute;
       top: 40%;
       right: 180px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
     }
 
     .arrow {
       position: absolute;
       top: 0;
       left: 502px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
     }
 
     .top {
       position: absolute;
       top: 75px;
       right: 190px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
 
       &::after {
         content: "";
