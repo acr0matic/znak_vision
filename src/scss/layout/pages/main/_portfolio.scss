@@ -81,6 +81,14 @@
     }
   }
 
+  &__video {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    outline: none;
+  }
+
   &__label {
     position: relative;
     display: flex;
@@ -140,6 +148,7 @@
 
     .main {
       position: absolute;
+      z-index: 0;
       top: -120px;
       right: 10px;
 
