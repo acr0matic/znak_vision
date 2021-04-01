@@ -33,3 +33,11 @@ const sliderCover = new Swiper('.porfolio-slider--cover', {
 });
 
 const lazyLoadInstance = new LazyLoad();
+
+const hireButton = document.getElementById('hire');
+const hireCheck = document.getElementById('hire-check');
+
+hireCheck.addEventListener('change', () => {
+  if (!hireCheck.checked) hireButton.setAttribute('disabled', 'disabled');
+  else hireButton.removeAttribute('disabled');
+});

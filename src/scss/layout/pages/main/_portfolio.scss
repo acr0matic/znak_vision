@@ -114,7 +114,6 @@
     z-index: 5;
 
     width: 100%;
-    height: 100%;
     outline: none;
   }
 
@@ -232,9 +231,10 @@
       pointer-events: none;
 
       @include breakpoint($breakpoint-mobile--large) {
-        display: none;
         top: -85px;
         right: calc(55%);
+
+        display: none;
 
         transform: translateX(50%);
       }
