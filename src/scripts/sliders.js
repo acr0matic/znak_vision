@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* global Swiper */
 
 const sliderWeb = new Swiper('.porfolio-slider--web', {

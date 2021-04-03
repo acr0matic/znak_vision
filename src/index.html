@@ -74,7 +74,7 @@
           <div class="col-11 d-flex justify-content-start justify-content-md-between align-items-center">
             <span class="header__text ms-4 ms-md-0">Думай! Делай!</span>
             <div class="header__social d-flex align-items-center ms-auto ms-md-0">
-              <a href="https://t.me/znakvision" target="_blank" class="header__link link link-icon me-2">
+              <a href="https://t.me/znakvision" target="_blank" class="header__link link link-icon">
                 <img class="header__icon" src="img/icons/social/telegram.svg" alt="">
               </a>
             </div>
@@ -155,7 +155,7 @@
                   <li class="list__item">🌼 Демократичные цены</li>
                 </ul>
 
-                <button data-micromodal-trigger="modal-callback" class="button button-primary d-block mx-auto mx-md-0 mb-5 mb-md-0">Нанять меня</button>
+                <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary d-block mx-auto mx-md-0 mb-5 mb-md-0">Нанять меня</button>
               </div>
               <!-- /.hero__content -->
             </div>
@@ -220,7 +220,7 @@
                 Многостраничные сайты <br> также возможны.
               </p>
 
-              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto">Заказать сайт</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary mt-auto">Заказать сайт</button>
             </div>
             <!-- /.col-3 -->
 
@@ -299,7 +299,7 @@
                 Удивляйте своих подписчиков!
               </p>
 
-              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto">Сделать сториз</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary mt-auto">Сделать сториз</button>
             </div>
             <!-- /.col-3 -->
 
@@ -339,7 +339,7 @@
                 ВК и бизнес-группы FB
               </p>
 
-              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Оформить соцсеть</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary mt-auto mb-5 mb-md-0">Оформить соцсеть</button>
             </div>
             <!-- /.col-3 -->
 
@@ -437,7 +437,7 @@
                 В ВК также можно видео со звуком <br> закольцевать и сделать <br> анимированный продающий пост.
               </p>
 
-              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Хочу креатив</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary mt-auto mb-5 mb-md-0">Хочу креатив</button>
             </div>
             <!-- /.col-3 -->
 
@@ -479,7 +479,7 @@
                 Профессиональный монтаж <br> блогов, фильмов, сюжетов. <br> Обоснованная склейка.
               </p>
 
-              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Взорвать YouTube</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary mt-auto mb-5 mb-md-0">Взорвать YouTube</button>
             </div>
             <!-- /.col-3 -->
 
@@ -513,7 +513,7 @@
                 даты выхода и т.д.
               </p>
 
-              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Нужна обложка</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" class="button button-primary mt-auto mb-5 mb-md-0">Нужна обложка</button>
             </div>
             <!-- /.col-3 -->
 
@@ -641,7 +641,7 @@
 
               <p class="contact__text mb-4 py-2">Я самозанятый и плачу налоги)</p>
               <p class="contact__text mb-2">ну... и ещё разок...</p>
-              <button data-micromodal-trigger="modal-callback" id="hire" class="button button-primary mb-2">Нанять меня</button>
+              <button onclick="window.location.href='https://t.me/znakvision'" id="hire" class="button button-primary mb-2">Нанять меня</button>
               <label class="checkbox mb-3">
                 <input id="hire-check" type="checkbox" checked>
                 <span class="checkbox__mark me-2"></span>
@@ -704,10 +704,10 @@
         </header>
 
         <main class="modal__content position-relative" id="modal-1-content">
-          <form action="">
+          <form action="php/mail.php">
             <label class="input">
               <span class="input__label">форма</span>
-              <textarea class="input__field input__field--area" name="user_text"></textarea>
+              <textarea class="input__field input__field--area" name="user_message"></textarea>
             </label>
 
             <button class="modal__button button button-primary">Нанять</button>
@@ -725,7 +725,6 @@
 
   <script src="scripts/script.js"></script>
   <script src="scripts/sliders.js"></script>
-  <script src="scripts/forms.js"></script>
   <!-- endbuild -->
 </body>
 

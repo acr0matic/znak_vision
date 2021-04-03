@@ -6,6 +6,7 @@ MicroModal.init({
   disableScroll: true,
 });
 
+// eslint-disable-next-line no-unused-vars
 const lazyLoadInstance = new LazyLoad();
 
 const hireButton = document.getElementById('hire');
