@@ -3,7 +3,11 @@
 // -----------------------------------------------------------------------------
 
 #header {
-  position: relative;
+  position: sticky;
+  z-index: $z-index-header;
+  top: 0;
+  left: 0;
+
   padding: 20px 0;
   box-shadow: 0 4px 23px rgba(0, 0, 0, 0.08);
   background-color: $palette-main;
@@ -35,27 +39,6 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: 14px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 52px;
-    right: 60px;
-
-    display: block;
-    background-color: #3b3b3b;
-
-    width: 50px;
-    height: 30px;
-
-    @include breakpoint($breakpoint-tablet) {
-      top: 37px;
-      right: initial;
-      left: -30px;
-
-      height: 11px;
     }
   }
 }

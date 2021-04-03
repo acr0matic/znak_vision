@@ -35,6 +35,27 @@
         left: 230px;
       }
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 60px;
+
+      display: block;
+      background-color: #3b3b3b;
+
+      width: 50px;
+      height: 30px;
+
+      @include breakpoint($breakpoint-tablet) {
+        top: 37px;
+        right: initial;
+        left: -30px;
+
+        height: 11px;
+      }
+    }
   }
 }
 

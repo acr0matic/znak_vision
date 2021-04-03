@@ -15,19 +15,46 @@
 
 .modal__container {
   position: relative;
+  width: 100%;
+  max-width: 555px;
+
+  padding: 10px 80px 20px 80px;
+
+  background-color: #ffffff;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    max-width: 310px;
+    padding: 35px 15px 15px 15px;
+  }
 }
 
 .modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .modal__title {
+  font-size: 14px;
+  font-weight: $weight-Regular;
+
+  line-height: 18px;
+}
+
+.modal__image {
+  @include breakpoint($breakpoint-mobile--large) {
+    position: relative;
+    top: -30px;
+    right: 40px;
+    width: 48px;
+  }
 }
 
 .modal__close {
   position: absolute;
   z-index: 3;
-  top: 10px;
-  right: 5px;
+  top: 20px;
+  right: 15px;
 
   background-color: transparent;
   border: none;
@@ -42,11 +69,19 @@
   }
 
   &:before {
-    content: url("../img/icons/control/modal__close.svg");
+    content: "\2715";
   }
 }
 
 .modal__content {
+}
+
+.modal__button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
 }
 
 @keyframes mmfadeIn {

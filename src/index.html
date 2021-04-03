@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- Базовые мета-теги для поисковиков -->
-  <title>Заголовок</title>
+  <title>znakЪvision</title>
 
   <!-- Иконки для страницы -->
   <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -155,7 +155,7 @@
                   <li class="list__item">🌼 Демократичные цены</li>
                 </ul>
 
-                <button class="button button-primary d-block mx-auto mx-md-0 mb-5 mb-md-0">Нанять меня</button>
+                <button data-micromodal-trigger="modal-callback" class="button button-primary d-block mx-auto mx-md-0 mb-5 mb-md-0">Нанять меня</button>
               </div>
               <!-- /.hero__content -->
             </div>
@@ -220,7 +220,7 @@
                 Многостраничные сайты <br> также возможны.
               </p>
 
-              <button class="button button-primary mt-auto">Заказать сайт</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto">Заказать сайт</button>
             </div>
             <!-- /.col-3 -->
 
@@ -299,7 +299,7 @@
                 Удивляйте своих подписчиков!
               </p>
 
-              <button class="button button-primary mt-auto">Сделать сториз</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto">Сделать сториз</button>
             </div>
             <!-- /.col-3 -->
 
@@ -339,7 +339,7 @@
                 ВК и бизнес-группы FB
               </p>
 
-              <button class="button button-primary mt-auto mb-5 mb-md-0">Оформить соцсеть</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Оформить соцсеть</button>
             </div>
             <!-- /.col-3 -->
 
@@ -437,7 +437,7 @@
                 В ВК также можно видео со звуком <br> закольцевать и сделать <br> анимированный продающий пост.
               </p>
 
-              <button class="button button-primary mt-auto mb-5 mb-md-0">Хочу креатив</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Хочу креатив</button>
             </div>
             <!-- /.col-3 -->
 
@@ -479,7 +479,7 @@
                 Профессиональный монтаж <br> блогов, фильмов, сюжетов. <br> Обоснованная склейка.
               </p>
 
-              <button class="button button-primary mt-auto mb-5 mb-md-0">Взорвать YouTube</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Взорвать YouTube</button>
             </div>
             <!-- /.col-3 -->
 
@@ -513,7 +513,7 @@
                 даты выхода и т.д.
               </p>
 
-              <button class="button button-primary mt-auto mb-5 mb-md-0">Нужна обложка</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary mt-auto mb-5 mb-md-0">Нужна обложка</button>
             </div>
             <!-- /.col-3 -->
 
@@ -641,7 +641,7 @@
 
               <p class="contact__text mb-4 py-2">Я самозанятый и плачу налоги)</p>
               <p class="contact__text mb-2">ну... и ещё разок...</p>
-              <button id="hire" class="button button-primary mb-2">Нанять меня</button>
+              <button data-micromodal-trigger="modal-callback" id="hire" class="button button-primary mb-2">Нанять меня</button>
               <label class="checkbox mb-3">
                 <input id="hire-check" type="checkbox" checked>
                 <span class="checkbox__mark me-2"></span>
@@ -687,11 +687,45 @@
     <!-- /.container -->
   </footer>
 
+  <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-1-title">
+            Рад приветствовать!
+            <br>
+            Расскажите о своих нуждах
+            <br>
+            в форме ниже.
+          </h2>
+
+          <img class="modal__image" src="img/modal__header.png" alt="">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+
+        <main class="modal__content position-relative" id="modal-1-content">
+          <form action="">
+            <label class="input">
+              <span class="input__label">форма</span>
+              <textarea class="input__field input__field--area" name="user_text"></textarea>
+            </label>
+
+            <button class="modal__button button button-primary">Нанять</button>
+          </form>
+        </main>
+      </div>
+    </div>
+  </div>
+
   <!-- Скрипты -->
   <!-- build:js -->
   <script src="scripts/libraries/lazyload.js"></script>
   <script src="scripts/libraries/swiper.js"></script>
+  <script src="scripts/libraries/micromodal.js"></script>
+
   <script src="scripts/script.js"></script>
+  <script src="scripts/sliders.js"></script>
+  <script src="scripts/forms.js"></script>
   <!-- endbuild -->
 </body>
 
