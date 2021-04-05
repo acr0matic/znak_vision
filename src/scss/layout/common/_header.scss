@@ -22,10 +22,7 @@
 
   &__email {
     @include breakpoint($breakpoint-tablet) {
-      position: absolute;
-      right: 0;
-      bottom: -40px;
-      font-size: 14px;
+      display: none;
     }
   }
 

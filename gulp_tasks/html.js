@@ -22,7 +22,7 @@ task('html', () => src(paths.html.src)
     htmlMin({
       sortAttributes: true,
       sortClassName: true,
-      collapseWhitespace: false,
+      collapseWhitespace: true,
     }),
   )
   .pipe(debug({
